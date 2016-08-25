@@ -1,0 +1,391 @@
+Cross-browser float clearing.
+http://nicolasgallagher.com/micro-clearfix-hack/
+http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
+ */
+.clearfix {   /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content:  "";
+  display:  table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* special for index.html */
+.category {
+  float: left;
+  margin-right: 2em;
+}
+
+.categoryctr {
+  text-align: center;
+}
+
+/* formatting across site */
+* {
+  font-family: 'Vollkorn', serif;
+  /*font-size: 15.555556297302246;*/
+}
+
+li {
+  list-style-type: circle;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+strong {
+  font-family: "Times New Roman";
+}
+
+.header {
+  margin: 15px auto 50px 15px;
+  align: center;
+}
+
+.header h1 {
+  font-size: 160%;
+  font-family: 'IM Fell Double Pica', serif;
+  text-align: center;
+}
+
+.page {
+  font-size: 100%;
+  width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+.page h1 {
+  margin: 0 0 10 0;
+  font-size: 150%;
+}
+
+.page h2 {
+  margin: 50px 0 25px 0;
+}
+
+.indexpage {
+  margin-left: 200px;
+}
+
+/* large tables of info: faq, vegan, lecture notes */
+.tbl {
+  text-align: center;
+  border: 5px outset grey;
+  width: 1000px;
+}
+
+.tbl td {
+  padding: 15px 20px 15px 20px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.tbl th {
+  font-size: 110%;
+  text-align: center;
+  border: 1px solid black;
+  text-style: bold;
+}
+
+/* course header table */
+.tblhd {
+  border: 5px outset grey;
+  width: 1000px;
+}
+
+.tblhd td {
+  border: 1px solid black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.tblsubhd {
+  border: 5px outset grey;
+  width: 400px;
+}
+
+.tblsubhd td {
+  border: 1px solid black;
+  padding-top: 25px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+/* coursework header with animation */
+.hdanim {
+  position: relative;
+  padding: 0 0 20px 0;
+}
+
+.hdanim h2 {
+  float: left;
+}
+
+.hdanim img {
+  position: absolute;
+  width: 90px;
+  padding: 0 0 0 20px;
+}
+
+/* course info no border columns */
+.tblcol {
+  width: 1030px;
+}
+
+.tblcol td {
+  padding: 5px 20px 5px 20px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tblpplist td {
+  font-size: 17px;
+}
+
+/* schedule table */
+.tblsch td {
+  text-align: center;
+  padding: -5px 5px 5px 5px;
+}
+.tblsch tr {
+  height: 2.3em;
+}
+
+/* text bubbles for commandments */
+p.txtbubl
+{
+  position: relative;
+  width: 850px;
+  /* height: 100px; */
+  text-align: center;
+  line-height: 1.5em;
+  background-color: #eff;
+  border: 2px solid #666;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+/* smaller text bubbles for advice on course websites */
+p.tnybubl
+{
+  position: relative;
+  display: inline-block;
+  /* width: 350px; */
+  /* height: 100px; */
+  text-align: center;
+  line-height: 1.5em;
+  background-color: #eff;
+  border: 2px solid #666;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  padding: 10px 15px 10px 15px;
+}
+
+/*
+link to button maker:
+http://css-tricks.com/examples/ButtonMaker/#
+*/
+
+/*
+link to color picker:
+http://hslpicker.com/
+*/
+
+/* schedule and button formats */
+td.mytime {
+  background: #ffd7ae
+}
+/** #ffbf80 */
+
+td.ofhr {
+  background: #abe7d0;
+  font-size: 13pt
+}
+
+button.calc {
+  background: #88c2fb
+}
+/** #9fc9f4 */
+
+button.noncalc {
+  background: #ef8585
+}
+/** #d69e9e */
+
+button.contents {
+  background: #83495f
+}
+/** #6c9 #cc668d #b83d6c #67223d */
+
+/* buttons */
+button.punch {
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 15px "Vollkorn", serif;
+  line-height: 1;
+  margin: 0px 0 10px 0;
+  padding: 5px 0 5px 0; /** Top Right Bottom Left (TROUBLE) */
+  text-align: center;
+  text-shadow: 1px 1px 1px #1e2d4d;
+  width: 125px;
+  -webkit-background-clip: padding-box;
+}
+
+button.punch:hover {
+  -webkit-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  -moz-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
+  cursor: pointer;
+}
+
+button.punch:active {
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+  -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+  margin-top: 0px;
+}
+
+button.nav {
+   border-top: 1px solid #97f7c4;
+   background: #65d6bd;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e8b9c), to(#65d6bd));
+   background: -webkit-linear-gradient(top, #3e8b9c, #65d6bd);
+   background: -moz-linear-gradient(top, #3e8b9c, #65d6bd);
+   background: -ms-linear-gradient(top, #3e8b9c, #65d6bd);
+   background: -o-linear-gradient(top, #3e8b9c, #65d6bd);
+   padding: 7px 15px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+button.nav:hover {
+   border-top-color: #4fb895;
+   background: #4fb895;
+   color: #f5e3fd; /* text hover color */
+}
+
+button.nav:active {
+   border-top-color: #1b505c;
+   background: #1b505c;
+}
+
+button.resc {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6f3e9c), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #6f3e9c, #65a9d7);
+   background: -moz-linear-gradient(top, #6f3e9c, #65a9d7);
+   background: -ms-linear-gradient(top, #6f3e9c, #65a9d7);
+   background: -o-linear-gradient(top, #6f3e9c, #65a9d7);
+   padding: 7px 15px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+button.resc:hover {
+   border-top-color: #7f63ab;
+   background: #7f63ab;
+   color: #ddf8ef; /* text hover color */
+   }
+
+button.resc:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+button.game {
+   border-top: 1px solid #6d72c7;
+   background: #74b8b5;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5b55ab), to(#74b8b5));
+   background: -webkit-linear-gradient(top, #5b55ab, #74b8b5);
+   background: -moz-linear-gradient(top, #5b55ab, #74b8b5);
+   background: -ms-linear-gradient(top, #5b55ab, #74b8b5);
+   background: -o-linear-gradient(top, #5b55ab, #74b8b5);
+   padding: 20px 40px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 19px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button.game:hover {
+   border-top-color: #426e8a;
+   background: #426e8a;
+   color: #b9d1de;
+   }
+button.game:active {
+   border-top-color: #173245;
+   background: #173245;
+   }
+
+/* mathematica page */
+.mma {
+  text-style: bold;
+  font-family: 'Inconsolata';
+  display: inline;
+}
+
+.press {
+  display: inline;
+  color: darkred;
+}
+
+.mmaio {
+  display: inline;
+  color: darkblue;
+}
+
+.mmn {
+  color: green;
+  display: inline;
+}
