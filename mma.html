@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel = "stylesheet" type = "text/css" href = "http://fonts.googleapis.com/css?family=Vollkorn">
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Inconsolata:700'>
+  <link rel="stylesheet" href="mathpg.css" />
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML,http://www3.amherst.edu/~jdambroise/mathjax_config.js"></script>
+</head>
+
+<body style="background: white url('images/marblefaint.jpg');" link="blue" vlink="purple">
+<div class = "page">
+
+  <br>
+  <button class = "nav"
+  onClick="window.location='studyaids.html'">
+    Back To Study Aids
+  </button>
+  <br>
+
+  <center>
+    <div class="header">
+      <h1>
+        Quick Start Mathematica (MMA) Reference
+      </h1>
+    </div>
+
+    <blockquote>
+      To be proficient in MMA you must learn to navigate the <a href="http://reference.wolfram.com/language/">Wolfram Documentation Center</a><br>
+      where you'll find much more comprehensive info.
+    </blockquote>
+
+  <button class="punch contents"
+    onClick="window.location='#basic'">
+    Basic <br> Operations
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#execute'">
+    Executing <br> Commands
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#clr'">
+    MMA Remembers!
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#constants'">
+    Known <br> Constants
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#num_symb'">
+    Symbolic vs. <br> Numeric
+  </button>
+  <br>
+  <br>
+  <button class="punch contents"
+    onClick="window.location='#tf'">
+    True, False &amp;<br> = versus ==
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#fns'">
+    Capitalize[...] <br> Functions
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#trbl_fn'">
+    Troubleshoot<br> Functions
+  </button>
+  <br>
+  <br>
+  <button class="punch contents"
+    onClick="window.location='#key'">
+    Keyboard<br> Shortcuts
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#rpar'">
+    Polynomial<br> Basics
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#trbl_wrk'">
+    Troubleshoot<br> Output
+  </button>
+  <br>
+  <br>
+  <button class="punch contents"
+    onClick="window.location='#brckt'">
+    Lists &amp;<br> {Brackets}
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#tblmat'">
+    Tables &amp;<br> Matrices
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='#trbl_mat'">
+    Troubleshoot<br> Matrices
+  </button>
+  <br>
+  <br>
+    Essential links to the documentation center:
+  <br>
+  <button class="punch contents"
+    onClick="window.location='http://reference.wolfram.com/language/tutorial/Simplification.html' ">
+    Simplifying <br> Expressions
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://reference.wolfram.com/language/howto/PlotFunctionsOfOneVariable.html' ">
+    Plot function<br>of 1 variable
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://reference.wolfram.com/language/howto/PlotFunctionsOfTwoVariables.html' ">
+    Plot function <br>of 2 variables
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://reference.wolfram.com/language/howto/PlotData.html' ">
+    Plot <br> Data
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://reference.wolfram.com/language/guide/HowToTopics.html'">
+    How-to<br> Guides
+  </button>
+  <br>
+  <br>
+    Nice explanations of trickier stuff, by other people:
+  <br>
+  <button class="punch contents"
+    onClick="window.location='http://www.nhn.ou.edu/~morrison/Mathematica/TipSheets/Troubleshooting.pdf'">
+    Troubleshooting<br> Tips
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://mathematicaninja.wordpress.com/2013/04/23/functions/' ">
+    Set= versus<br> SetDelayed:=
+  </button>
+  &nbsp;
+  <button class="punch contents"
+    onClick="window.location='http://www.luc.edu/faculty/dslavsk/courses/phys301/classnotes/loops.pdf' ">
+    Loops &amp; Repeat<br> Operations
+  </button>
+  <br>
+  <br>
+    Other people's quick refs and intros:
+  <br>
+  <button class="punch contents"
+    onClick="window.location='#lst'">
+    Links to Other <br> Quick Refs
+  </button>
+
+  </center>
+
+  <a name='basic'></a>&nbsp;
+
+  <h2>Basic Operations</h2>
+
+  <blockquote>
+    <div class="mma">+ </div> Addition<br>
+    <div class="mma">- </div> Subtraction<br>
+    <div class="mma">* </div> or <div class="press">SPACE</div> for Multiplication<br>
+    <div class="mma">/ </div> Division<br>
+    <div class="mma">^ </div> or <div class="press">CTRL+^</div> for Superscripts or Powers<br>
+    <div class="mma">( ... )</div> (Round) Parentheses for grouping<br>
+    <br>
+    Without parentheses MMA will follow standard order of operations.<br>
+    Examples:<br>
+    <br>
+
+    <div class="mmaio">In[1]:=</div>
+    <blockquote>
+      <div class="mma">2 3 + 10*8</div>
+    </blockquote>
+
+    <div class="mmaio">Out[1]=</div>
+    <blockquote>
+      <div class="mma">86</div>
+    </blockquote>
+
+    <div class="mmaio">In[2]:=</div>
+    <blockquote>
+      <div class="mma">(1-2)^2 + 4/2</div>
+    </blockquote>
+
+    <div class="mmaio">Out[2]=</div>
+    <blockquote>
+      <div class="mma">3</div>
+    </blockquote>
+
+    The keyboard command <div class="press">CTRL+^</div> gives fancier superscript notation instead of the <div class="mma">^ </div> symbol.<br>
+    <br>
+    <div class="mmaio">In[3]:=</div>
+    <blockquote>
+      <div class="mma">(1-2)<sup>2</sup> + 4/2</div>
+    </blockquote>
+
+    <div class="mmaio">Out[3]=</div>
+    <blockquote>
+      <div class="mma">3</div>
+    </blockquote>
+
+
+  </blockquote>
+
+
+  <a name='execute'></a>&nbsp;
+
+  <h2>Executing Commands</h2>
+
+    Type <div class="press">ENTER</div> to insert a line-break; this will <i>not</i> execute.<br>
+    To execute press <div class="press">SHIFT+ENTER</div>.<br>
+    Semi-colons at the end of a line suppress output.<br>
+    <br>
+
+    For example, below the result of the first line is <i>not</i> output,<br>
+    but the result of the second line <i>is</i> output.<br>
+    <br>
+
+    <div class="mmaio">In[1]:=</div>
+    <blockquote>
+      <div class="mma">x = 3<sup>2</sup>;</div>
+      <div class="press"> &nbsp; ENTER</div><br>
+      <div class="mma"> x^2</div>
+      <div class="press"> &nbsp; SHIFT+ENTER</div>
+    </blockquote>
+
+    <div class="mmaio">Out[1]=</div>
+    <blockquote>
+      81
+    </blockquote>
+
+    You can output (omit semi-colon) as many lines as you need or want.<br>
+    <br>
+
+    <div class="mmn"><i>NOTE: &nbsp; </i>  The 1<sup>st</sup> input line above used <div class="press">CTRL+^</div> for the power; it's a bit fancier. <br> The 2<sup>nd</sup> input line above used the symbol </div><div class="mma" color="black">^ </div><div class="mmn"> for the power; it's convenient and also works!<br>
+    </div>
+
+
+  <a name='clr'></a>&nbsp;
+
+  <h2>MMA Remembers! Clear variables!</h2>
+
+    Below we use x again in a different context.  So let's clear it here.<br>
+    <br>
+
+    <div class="mmaio">In[2]:=</div>
+    <blockquote>
+      <div class="mma">Clear[x]</div>
+    </blockquote>
+
+
+  <a name='constants'></a>&nbsp;
+
+  <h2>Capitalize Known Constants</h2>
+
+    Familiar constants are known by MMA.  Some examples are<br>
+    &nbsp; <div class="mma">Pi, E, I, Infinity</div><br>
+    where <div class="mma">I</div> stands for \(\sqrt{-1}\).<br>
+    <br>
+
+    Fancy symbols can be generated in MMA by typing the following.<br>
+    &nbsp; \( \pi \) symbol: &nbsp; either &nbsp;
+    <div class="press">ESC</div> pi <div class="press">ESC</div>
+    &nbsp; or &nbsp; <div class="mma">\[Pi]</div><br>
+    &nbsp; \(e\) symbol: &nbsp; either &nbsp;
+    <div class="press">ESC</div> ee <div class="press">ESC</div>
+    &nbsp; or &nbsp; <div class="mma">\[ExponentialE]</div><br>
+    &nbsp; \(\infty\) symbol: &nbsp; <div class="mma">\[Infinity]</div><br>
+    <br>
+
+    For a more complete list consult the <a href="http://reference.wolfram.com/language/tutorial/MathematicalConstants.html">documentation center list of mathematical constants</a>.
+    <br>
+
+  <a name='num_symb'></a>&nbsp;
+
+  <h2>Symbolic vs. Numeric</h2>
+
+    Usually MMA computes symbolically.<br>
+    To get a numerical approximation use N functions as shown below.<br>
+    <div class="mmn"><i>NOTE: &nbsp; </i> It is recommended to compute symbolically most of the time aside from perhaps the final answer.<br>
+    This allows you to avoid error propagation. <b>Please avoid error propagation!</b></div><br>
+    <br>
+
+    Symbolic output:<br>
+    <br>
+
+    <div class="mmaio">In[3]:=</div>
+    <blockquote>
+      <div class="mma">Pi</div>
+    </blockquote>
+
+    <div class="mmaio">Out[3]=</div>
+    <blockquote>
+      <div class="mma">\(\pi\)</div>
+    </blockquote>
+
+    Numeric output:<br>
+    <br>
+
+    <div class="mmaio">In[4]:=</div>
+    <blockquote>
+      <div class="mma">Pi //N</div>
+    </blockquote>
+
+    <div class="mmaio">Out[4]=</div>
+    <blockquote>
+      <div class="mma">3.14159</div>
+    </blockquote>
+
+    Numeric output, controlling the number of digits:<br>
+    <br>
+
+    <div class="mmaio">In[5]:=</div>
+    <blockquote>
+      <div class="mma">N[Pi,50]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[5]=</div>
+    <blockquote>
+      <div class="mma">3.1415926535897932384626433832795028841971693993751</div>
+    </blockquote>
+
+
+  <a name='tf'></a>&nbsp;
+
+  <h2>True, False &amp; Equal Signs</h2>
+
+    MMA can tell you whether a statement is true or false.<br>
+    <div class="mma"> <= </div> means \(\leq\), less or equal.<br>
+    <div class="mma"> >= </div> means \(\geq\), greater or equal.<br>
+    <div class="mma"> = </div> single equal is used for variable assignment.<br>
+    <div class="mma"> == </div> double equal is used for true/false statements.<br>
+    <br>
+
+    <div class="mmaio">In[6]:=</div>
+    <blockquote>
+      <div class="mma">a = 2;</div><br>
+      <div class="mma">b = 3;</div><br>
+      <div class="mma">a <= b</div>
+    </blockquote>
+
+    <div class="mmaio">Out[6]=</div>
+    <blockquote>
+      True
+    </blockquote>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">a > b</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      False
+    </blockquote>
+
+    <div class="mmaio">In[8]:=</div>
+    <blockquote>
+      <div class="mma">b - a == 1</div>
+    </blockquote>
+
+    <div class="mmaio">Out[8]=</div>
+    <blockquote>
+      True
+    </blockquote>
+
+
+  <a name='fns'></a>&nbsp;
+
+  <h2>Capitalize[and use square brackets] for Built-In Functions</h2>
+
+    Familiar functions are known by MMA.  Some examples are<br>
+    &nbsp; <div class="mma">Sin[x], Cos[x], Tan[x], Csc[x], ...</div><br>
+    &nbsp; <div class="mma">ArcSin[x], ArcCos[x], ArcCot[x], ...</div><br>
+    &nbsp; <div class="mma">Abs[x]</div> means absolute value |x|<br>
+    &nbsp; <div class="mma">Exp[x]</div> and <div class="mma">E^x</div> and <div class="mma">E<sup>x</sup></div> (using <div class="press">Ctrl+^</div>) all mean the same thing.<br>
+    &nbsp; <div class="mma">Log[x]</div> means \(\log_e(x)\).<br>
+    &nbsp; <div class="mma">Log10[x]</div> means \(\log_{10}(x)\).<br>
+    &nbsp; <div class="mma">Log[b,x]</div> means \(\log_b(x)\).<br>
+    <br>
+
+    Consult the <a href="http://reference.wolfram.com/language/guide/MathematicalFunctions.html">documentation center list of mathematical functions</a> for a more complete reference.<br>
+    <br>
+
+    Here are more examples of functions.  Just try stuff out!<br>
+    <br>
+
+    <div class="mmaio">In[6]:=</div>
+    <blockquote>
+      <div class="mma">Min[8, -2, -18, 86, 5]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[6]=</div>
+    <blockquote>
+      -18
+    </blockquote>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">Max[8, -2, -18, 86, 5]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      86
+    </blockquote>
+
+    Floor: always rounds down.<br>
+    <div class="mmaio">In[8]:=</div>
+    <blockquote>
+      <div class="mma">Floor[Pi]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[8]=</div>
+    <blockquote>
+      3
+    </blockquote>
+
+    Ceiling: always rounds up.<br>
+    <div class="mmaio">In[9]:=</div>
+    <blockquote>
+      <div class="mma">Ceiling[Pi]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[9]=</div>
+    <blockquote>
+      4
+    </blockquote>
+
+    Round: rounds down if the fractional part is less than .5,
+    and rounds up if the fractional part is greater or equal to .5.<br>
+    <div class="mmaio">In[10]:=</div>
+    <blockquote>
+      <div class="mma">Round[3.5]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[10]=</div>
+    <blockquote>
+      4
+    </blockquote>
+
+  <a name='trbl_fn'></a>&nbsp;
+
+  <h2>Troubleshoot Functions</h2>
+
+    <i>How do I remember everything???</i> <b>Use MMA to help you!</b><br>
+    <br>
+
+    Suppose you forget which base the Log function uses.<br>
+    You should know from basics that \(\log_e(e)=1\) and \(\log_{10}(10)=1\).<br>
+    <div class="mmn">Test it by typing into MMA.</div><br>
+    <br>
+
+    <div class="mmaio">In[6]:=</div>
+    <blockquote>
+      <div class="mma">Log[10]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[6]=</div>
+    <blockquote>
+      <div class="mma">Log[10]</div>
+    </blockquote>
+
+    This constant does not simplify!
+    Let's try something else.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">Log[E]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      <div class="mma">1</div>
+    </blockquote>
+
+    <b>Eureka!</b> We deduce that Log <i>must</i> mean log-base-e not log-base-10.<br>
+    <br>
+
+    <div class="mmn"><i>REMEMBER: &nbsp;</i> If you forget what a function means, <b>double check it with a basic example!</b><br>
+    Alternately, you can check the <a href="http://reference.wolfram.com/language/ref/Log.html">documentation center for the Log function</a> or any other function you need.</div>
+    <br>
+
+  <a name='key'></a>&nbsp;
+
+  <h2>Keyboard Shortcuts</h2>
+
+    The square root function can either be implemented typing<br>
+    <br>
+
+    <div class="mmaio">In[8]:=</div>
+    <blockquote>
+      <div class="mma">Sqrt[4]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[8]=</div>
+    <blockquote>
+      2
+    </blockquote>
+
+    or alternately <div class="press">Ctrl+@</div> gives the same result using the fancier radical sign.<br>
+    <br>
+
+    <div class="mmaio">In[9]:=</div>
+    <blockquote>
+      <div class="mma">\(\sqrt{4}\)</div>
+    </blockquote>
+
+    <div class="mmaio">Out[9]=</div>
+    <blockquote>
+      2
+    </blockquote>
+
+    <div class="mmn"><i>NOTE: &nbsp; </i> To press <div class="press">CTRL+@</div> really means to press <div class="press">CTRL+SHIFT+2</div>. All computers are different, but on <i>some</i> computers just <div class="press">CTRL+2</div> also gives the radical symbol (it doesn't work on my mac computer, maybe it'll work on your PC &#9786; ).<br>
+    <br>
+    For more keyboard commands see the <a href="http://reference.wolfram.com/language/tutorial/KeyboardShortcutListing.html">documentation center shortcut listing.</a></div>
+
+  <a name='rpar'></a>&nbsp;
+
+  <h2><a name='rpar'>Polynomial Basics</a></h2>
+
+    The polynomial below is of type \(ax^2+bx+c\) with coefficients a=1, b=3/4, c=1/8.<br>
+    The Factor[] function works as expected here.<br>
+    <br>
+
+    <div class="mmaio">In[10]:=</div>
+    <blockquote>
+      <div class="mma">poly = x^2 + 3 x/4 + 1/8;</div><br>
+      <div class="mma">Factor[poly]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[10]=</div>
+    <blockquote>
+      \(\frac{1}{8} \)(1 + 2 x) (1 + 4 x)
+    </blockquote>
+
+    <br>
+
+    <div class="mmn"><i>REMEMBER:</i> [Square] parenthesis are use for functions and (round) parentheses are used for grouping; see above.</div><br>
+    Note: {Brackets} are used for lists; see below.<br>
+    <br>
+
+    <a name='trbl_wrk'></a>&nbsp;<br>
+
+    The polynomial below is of type \(ax^2+bx+c\) with coefficients a=1/8, b=3/32, c=-1/8.<br>
+    <br>
+
+    <div class="mmaio">In[11]:=</div>
+    <blockquote>
+      <div class="mma">poly2 = (x^2 + 3 x/4 - 1)/8;</div><br>
+      <div class="mma">Factor[poly2]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[11]=</div>
+    <blockquote>
+      \(\frac{1}{32} \)(-4 + 3 x + 4 x^2)
+    </blockquote>
+
+    <br>
+    <i>Oh no! Why didn't Factor[] work?  <br>
+    <div class="mmn">
+    </i> To <big><b> troubleshoot output and functionality</b></big> start by
+    <a href="http://reference.wolfram.com/language/ref/Factor.html">checking the documentation center</a></div> -- in this case for the Factor[] function.  <br>
+    Turns out Factor[] works only if the coefficients of the <i>factorization</i> are integers!  Bummer.<br>
+    <br>
+
+    Using our knowledge of polynomials, we know that the factorization should contain something like (x-root),<br>
+    where each root can be found with the quadratic formula.
+    Let's check the <a href="http://reference.wolfram.com/language/guide/PolynomialAlgebra.html">documentation center for Polynomial Algebra</a>.<br>
+    We'll find the roots using the Solve function.<br>
+    <br>
+
+    <div class="mmaio">In[12]:=</div>
+    <blockquote>
+      <div class="mma">Solve[poly2 == 0, x]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[12]=</div>
+    <blockquote>
+      \( \left\{ \left\{ x\rightarrow \frac{1}{8}\left(-3-\sqrt{73}\right) \right\}, \left\{ x\rightarrow \frac{1}{8}\left(-3+\sqrt{73}\right) \right\}\right\} \)
+    </blockquote>
+
+    <br>
+    Since the a-coefficient is a=1/8, we guess that the factorization of our polynomial is<br>
+    \( {\rm poly2} = \frac{1}{8}\left(x- {\rm root1}\right) \left( x - {\rm root2}\right)\)
+    with the roots output above.<br>
+    Let's check it using the Expand function.<br>
+    <br>
+
+    <div class="mmaio">In[13]:=</div>
+    <blockquote>
+      <div class="mma">r1 = (-3-Sqrt[73])/8;</div><br>
+      <div class="mma">r2 = (-3+Sqrt[73])/8;</div><br>
+      <div class="mma">Expand[(1/8) (x-r1) (x-r2)]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[13]=</div>
+    <blockquote>
+      \( -\displaystyle\frac{1}{8} + \frac{3 x}{32} + \frac{x^2}{8} \)
+    </blockquote>
+
+    That worked!  We successfully factored poly2, and we double checked our results. \(\checkmark\)<br>
+
+  <a name='brckt'></a>&nbsp;
+
+  <h2>Lists &amp; {Brackets}</h2>
+
+    A list is contained in {brackets}.<br>
+    You can operate on lists in intuitive ways.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">L1 = {6, 5, 4}</div><br>
+      <div class="mma">L2 = 2*L1</div><br>
+      <div class="mma">L3 = L1 + 1</div><br>
+      <div class="mma">First[L1] + Last[L1]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      {6, 5, 4}<br>
+      {12, 10, 8}<br>
+      {7, 6, 5}<br>
+      10
+    </blockquote>
+
+    <br>
+    You can access list elements using [[double square]] parentheses.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">L2[[1]]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      12
+    </blockquote>
+
+    <br>
+    The length of a list is not fixed! You can use code to redefine a list.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">L1 = Append[L1, 77]</div><br>
+      <div class="mma">Length[L1]</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      {6, 5, 4, 77}<br>
+      4
+    </blockquote>
+
+    More info about lists can be found at the <a href="http://reference.wolfram.com/language/guide/ListManipulation.html">documentation center for List Manipulation</a>.<br>
+    <br>
+
+  <a name='tblmat'></a>&nbsp;
+
+  <h2>Tables &amp; Matrices</h2>
+
+    <br>
+    A table or a matrix is the same as a list of lists.<br>
+    The output looks prettier using MatrixForm.<br>
+    <br>
+    Using the definitions of L1, L2, L3 in the <a href='#brckt'>List section</a> above,<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">mat = {L1, L2, L3}//MatrixForm</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      \(\left(\begin{array}{ccc}6&5&4\\ 12&10&8\\ 7&6&5 \end{array}\right)\)
+    </blockquote>
+
+    <br>
+    <br>
+
+    <a name='trbl_mat'></a>&nbsp;<br>
+
+    <div class="mmn"><big><b>You must be patient learning MMA!  <br>
+      You'll encounter unexpected results, and you'll have to figure out how to fix it.</b></big></div><br>
+      For example, MatrixForm does not play well with matrix operations.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">mat = {L1, L2, L3} //MatrixForm</div><br>
+      <div class="mma">imat = IdentityMatrix[3] //MatrixForm</div><br>
+      <div class="mma">mat + imat //MatrixForm</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      \(\left(\begin{array}{ccc}6&5&4\\ 12&10&8\\ 7&6&5 \end{array}\right)\)<br>
+      <br>
+      \(\left(\begin{array}{ccc}1&0&0\\ 0&1&0\\ 0&0&1 \end{array}\right)\)<br>
+      <br>
+      \(\left(\begin{array}{ccc}6&5&4\\ 12&10&8\\ 7&6&5 \end{array}\right)\)+\(\left(\begin{array}{ccc}1&0&0\\ 0&1&0\\ 0&0&1 \end{array}\right)\)
+    </blockquote>
+
+    <i>Why didn't they add???</i> It's the MatrixForm that's a problem.  <br>
+    Redoing it like so it works; turns out MatrixForm should <i>only</i> be used on the final product.<br>
+    <br>
+
+    <div class="mmaio">In[7]:=</div>
+    <blockquote>
+      <div class="mma">mat = {L1, L2, L3}</div><br>
+      <div class="mma">imat = IdentityMatrix[3]</div><br>
+      <div class="mma">mat+imat//MatrixForm</div>
+    </blockquote>
+
+    <div class="mmaio">Out[7]=</div>
+    <blockquote>
+      {{6, 5, 4}, {12, 10, 8}, {7, 6, 5}}<br>
+      <br>
+      {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}<br>
+      <br>
+      \(\left(\begin{array}{ccc}7&5&4\\ 12&11&8\\ 7&6&6 \end{array}\right)\)
+    </blockquote>
+
+    That worked! \(\checkmark\)<br>
+    <br>
+
+    <br>
+    More linear algebra commands can be found at the <a href="http://reference.wolfram.com/language/guide/MatrixOperations.html">documentation center on Matrix Operations</a> <br>
+    or at the <a href="http://reference.wolfram.com/language/howto/DoLinearAlgebra.html">documentation center on How to Do Linear Algebra</a>.
+
+
+
+  <center>
+
+  <a name='lst'></a>&nbsp;
+
+  <h2>Links to Other Quick Refs and Intros</h2>
+
+    <a href="http://www3.amherst.edu/~tleise/mathqkref.pdf">by Prof. Tanya Leise at Amherst College</a><br>
+    <a href="http://facultypages.morris.umn.edu/~mcquarrb/MMAReference.pdf">by Prof. Barry McQuarrie at Univ. of Minnesota Morris</a><br>
+    <a href="http://cda.morris.umn.edu/~roberts/intromath.pdf">by Prof. David Roberts at Univ. of Minnesota Morris</a><br>
+    <a href="https://pantherfile.uwm.edu/sorbello/www/classes/mathematica_commands.html">by Prof. Richard Sorbello at Univ. of Wisconsin Milwaukee</a><br>
+    <a href="https://dornsife.usc.edu/assets/sites/372/docs/Software_Resources/Mathematica/crib_sheet.pdf">by (Not sure!) at Univ. of So. CA at Dornsife</a><br>
+    <a href="http://www.case.edu/artsci/math/hurley/mma/mathematicacribsheet.html">by Prof. Mike Hurley at Case Western Reserve University</a><br>
+    <a href="https://www.cs.purdue.edu/homes/ayg/CS590C/www/mathematica/math.html">by Prof. Ananth Grama at Purdue University</a><br>
+    <a href="http://www.math.armstrong.edu/faculty/hollis/classes/3900/MathematicaIntro.pdf">by Prof. Selwyn Hollis at Armstrong Atlantic State University</a><br>
+
+    <br>
+    Do you know of another one?  Let me know at jdambroise-at-gmail-dot-com!
+  </center>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+</body>
+</html>
