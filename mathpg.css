@@ -22,8 +22,16 @@ http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
   margin-right: 2em;
 }
 
+.category div {
+  margin-top: 15px;
+}
+
 .categoryctr {
   text-align: center;
+}
+
+.row {
+  clear: both;
 }
 
 /* formatting across site */
@@ -57,6 +65,7 @@ strong {
   font-size: 100%;
   width: 1000px;
   margin: 0 auto 0 auto;
+  padding-bottom: 20px;
 }
 
 .page h1 {
@@ -65,7 +74,11 @@ strong {
 }
 
 .page h2 {
-  margin: 50px 0 25px 0;
+  margin: 50px 0 0 0;
+}
+
+.page h3 {
+  text-align: left;
 }
 
 .indexpage {
