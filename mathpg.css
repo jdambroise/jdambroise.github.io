@@ -34,6 +34,12 @@ http://perishablepress.com/press/2009/12/06/new-clearfix-hack/
   clear: both;
 }
 
+.instructions {
+  width: 450px;
+  display: block;
+  float: right;
+}
+
 /* formatting across site */
 * {
   font-family: 'Vollkorn', serif;
@@ -220,7 +226,7 @@ http://hslpicker.com/
 
 /* schedule and button formats */
 td.mytime {
-  background: #ffd7ae
+  background: #ffd7ae;
 }
 /** #ffbf80 */
 
@@ -230,22 +236,22 @@ td.ofhr {
 }
 
 button.calc {
-  background: #88c2fb
+  background: #88c2fb;
 }
 /** #9fc9f4 */
 
 button.noncalc {
-  background: #ef8585
+  background: #ef8585;
 }
 /** #d69e9e */
 
-button.contents {
-  background: #83495f
+button.contents, a.contents {
+  background: #83495f;
 }
 /** #6c9 #cc668d #b83d6c #67223d */
 
 /* buttons */
-button.punch {
+button.punch, a.punch {
   border-top: 1px solid #38538c;
   border-right: 1px solid #1f2d4d;
   border-bottom: 1px solid #151e33;
@@ -267,19 +273,25 @@ button.punch {
   -webkit-background-clip: padding-box;
 }
 
-button.punch:hover {
+button.punch:hover, a.punch:hover {
   -webkit-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
   -moz-box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
   box-shadow: inset 0 0px 20px 1px #87adff, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 8px 4px 1px #111111;
   cursor: pointer;
 }
 
-button.punch:active {
+button.punch:active, a.punch:active {
   -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
   -moz-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
   box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
   margin-top: 0px;
 }
+
+button.punch a {
+  color: white;
+  text-decoration: none;
+}
+
 
 button.nav {
    border-top: 1px solid #97f7c4;
