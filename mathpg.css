@@ -75,7 +75,7 @@ strong {
 
 .page {
   font-size: 100%;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto 0 auto;
   padding-bottom: 20px;
 }
@@ -416,3 +416,32 @@ button.game:active {
   color: green;
   display: inline;
 }
+
+/* appt page */
+ @media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+     position:relative;
+     padding-bottom: 50%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .vresponsive-iframe-container object,  
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0px;
+     left: 40px;
+     width: 90%;
+     height: 90%;
+ }
