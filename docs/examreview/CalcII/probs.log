@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 JAN 2017 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JAN 2017 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**review_probs.tex
-(./review_probs.tex
+**probs.tex
+(./probs.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/exam/exam.cls
@@ -352,8 +352,8 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \colbreak@box=\box54
 \mc@col@check@num=\count143
 )
-(./review_probs.aux)
-\openout1 = `review_probs.aux'.
+No file probs.aux.
+\openout1 = `probs.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -369,7 +369,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -494,20 +493,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4] [5]
-This exam contains 35 questions with 50 parts, 0 subparts, and 0 subsubparts.
-(./review_probs.aux)
+This exam contains 36 questions with 50 parts, 0 subparts, and 0 subsubparts.
+
+Class exam Warning: Point totals have changed. Rerun to get point totals right.
+
+
+(./probs.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4356 strings out of 493089
- 60181 string characters out of 6134842
- 138414 words of memory out of 5000000
- 7776 multiletter control sequences out of 15000+600000
+ 4355 strings out of 493089
+ 60150 string characters out of 6134842
+ 136953 words of memory out of 5000000
+ 7777 multiletter control sequences out of 15000+600000
  11627 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,26p,1667b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,26p,1660b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -523,7 +526,7 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on review_probs.pdf (5 pages, 162966 bytes).
+Output written on probs.pdf (5 pages, 163195 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream

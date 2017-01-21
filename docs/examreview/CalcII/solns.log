@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  20 JAN 2017 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 JAN 2017 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**review_solns.tex
-(./review_solns.tex
+**solns.tex
+(./solns.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/exam/exam.cls
@@ -352,8 +352,8 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \colbreak@box=\box54
 \mc@col@check@num=\count143
 )
-(./review_solns.aux)
-\openout1 = `review_solns.aux'.
+No file solns.aux.
+\openout1 = `solns.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
@@ -369,7 +369,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
-
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -493,27 +492,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 7099) in paragraph at lines 116--117
-[]$[] [] \OML/cmm/m/it/10 dx$ []$\OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@[] []\OT
-1/cmr/m/n/10 (4\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@
- []
-
 [2] [3]
-Overfull \hbox (6.26411pt too wide) in paragraph at lines 234--236
+Overfull \hbox (6.26411pt too wide) in paragraph at lines 235--237
 []$[][] \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^Yf\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
  x\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 dx$ $\OT1/cmr/m/n/10 = [][] 2\OML/cmm/m/i
 t/10 ^^Y [] []dx$ $\OT1/cmr/m/n/10 = [][] 2\OML/cmm/m/it/10 ^^Y [] []dx$
  []
 
 
-Overfull \hbox (29.8041pt too wide) in paragraph at lines 234--236
+Overfull \hbox (29.8041pt too wide) in paragraph at lines 235--237
 \OT1/cmr/m/n/10 = [][] 2\OML/cmm/m/it/10 ^^Y [] [] dx$ $\OT1/cmr/m/n/10 = 2\OML
 /cmm/m/it/10 ^^Y [][] [] dx$ $\OT1/cmr/m/n/10 = 2\OML/cmm/m/it/10 ^^Y []$ $\OT1
 /cmr/m/n/10 = 2\OML/cmm/m/it/10 ^^Y [] \OMS/cmsy/m/n/10 ^^@
  []
 
 [4] [5]
-Overfull \hbox (12.512pt too wide) in paragraph at lines 309--314
+Overfull \hbox (12.512pt too wide) in paragraph at lines 310--315
 [] [] \OMS/cmsy/m/n/10 ^^A [] [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R\OT1/cmr
 /m/n/10 )\OML/cmm/m/it/10 d^^R \OT1/cmr/m/n/10 = [] [] [][](\OML/cmm/m/it/10 ^^
 R\OT1/cmr/m/n/10 ) [](\OML/cmm/m/it/10 ^^R\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 d^^
@@ -521,12 +515,12 @@ R$$\OT1/cmr/m/n/10 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
 []\OT1/cmr/m/n/10 First fo-cus on the in-def-i-nite in-te-gral, us-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--330
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
 \OT1/cmr/m/n/10 the im-proper in-te-gral, when writ-ten as a
  []
 
@@ -538,43 +532,51 @@ Overfull \vbox (2.83838pt too high) has occurred while \output is active []
 
 
 [6]
-Underfull \hbox (badness 5203) in paragraph at lines 371--373
+Underfull \hbox (badness 5203) in paragraph at lines 372--374
 []\OT1/cmr/m/n/10 Applying the root test gives $[] [] =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 372--374
 [] [][] \OT1/cmr/m/n/10 = [][] =
  []
 
 [7] [8]
-This exam contains 35 questions with 50 parts, 0 subparts, and 0 subsubparts.
-(./review_solns.aux) ) 
+This exam contains 36 questions with 50 parts, 0 subparts, and 0 subsubparts.
+
+Class exam Warning: Point totals have changed. Rerun to get point totals right.
+
+
+(./solns.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4359 strings out of 493089
- 60205 string characters out of 6134842
- 153414 words of memory out of 5000000
- 7779 multiletter control sequences out of 15000+600000
+ 4355 strings out of 493089
+ 60150 string characters out of 6134842
+ 150953 words of memory out of 5000000
+ 7777 multiletter control sequences out of 15000+600000
  11627 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,26p,1677b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on review_solns.pdf (8 pages, 206921 bytes).
+ 38i,10n,26p,1670b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on solns.pdf (8 pages, 207644 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream

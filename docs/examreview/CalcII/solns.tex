@@ -97,7 +97,7 @@ by simulating exam scenario with {\bf no resources, only a blank sheet of paper}
   \item $\displaystyle\int_0^3 (x-1)dx$  {\color{red} $=1.5$}
   \item $\displaystyle\int_{-3}^0\left( 1+\sqrt{9-x^2}\right)dx$ {\color{red} $=3+\frac{9}{4}\pi$}
     \item $\displaystyle\int_{0}^5 \left| 2x - 4 \right| dx$ 
-  \\ {\color{red} two times integral of |x-2| which is absolute value shifted right by two units = 2( (1/2)(2)(2) + (1/2)(3)(3) ) = 2(2 + 9/2) = 2(13/2)=13}
+  \\ {\color{red} $=2\displaystyle\int |x-2| dx$.  Draw absolute value shifted right by two units and then shade in the appropriate region.  The final value is 13.}
   \item $\displaystyle\int_{-4}^4 f(x)dx$ where $f(x) = \left\{ \begin{array}{ll}x & \mbox{for $x\leq 0$}\\
   x+1& \mbox{for $x>0$}\end{array} \right.$ 
   \\ {\color{red} The value of the definite integral is $4$.  Draw it to understand.}
@@ -113,7 +113,8 @@ by simulating exam scenario with {\bf no resources, only a blank sheet of paper}
   \begin{multicols}{2}
   \part $\displaystyle\int \frac{\sqrt{x}+1}{x} dx$ {\color{red} $= 2\sqrt{x}+\ln|x|+C$}
   \part $\displaystyle\int (x^2-3)(x+4) dx$  {\color{red} $ = \frac{1}{4}x^4-\frac{3}{2}x^2+\frac{4}{3}x^3-12x+C$}
-  \part $\displaystyle\int \left( 2\csc^2(4x) + \frac{e^{-4x} + x}{4} \right) dx$  {\color{red} $=-\frac{1}{2}\cot(4x) - \frac{1}{16}e^{-4x} + \frac{1}{8}x^2 + C$}
+  \part $\displaystyle\int \left( 2\csc^2(4x) + \frac{e^{-4x} + x}{4} \right) dx$
+  \\  {\color{red} $=-\frac{1}{2}\cot(4x) - \frac{1}{16}e^{-4x} + \frac{1}{8}x^2 + C$}
   \part $\displaystyle\int \frac{3}{10+10x^2} dx$  {\color{red} $=\frac{3}{10}Arctan(x) + C$}
   \part $\displaystyle\int \frac{\sqrt{9-9x^2}  - 3}{\sqrt{9-9x^2}} dx $  {\color{red} $=x - Arcsin(x) + C$}
   \end{multicols}
@@ -226,7 +227,7 @@ by simulating exam scenario with {\bf no resources, only a blank sheet of paper}
 \underline{SECTION 6.5} 
 
 \question Find the length of the line $y=3x+2$ from $x=1$ to $x=5$ using (a) basic geometry, and then (b) the arclength formula.  Be sure that you obtain the same answer for both parts (a) and (b).   Include a rough sketch for each.
-\\ {\color{red} (a) The desired length is the hypoteneuse of a triangle with base $4$ and height $12$, so using the Pythagorean theorem the length is $\sqrt{16+144}=\sqrt{160} = 4\sqrt{10}$.  (b) The arclength formula gives $\displaystyle\int_1^5 \sqrt{1 + (3)^2}dx = 4\sqrt{10}$.  \checkmark }
+\\ {\color{red} (a) Draw the line and examine the line segment in question here.  The desired length is the hypoteneuse of a triangle with base $4$ and height $12$, so using the Pythagorean theorem the length is $\sqrt{16+144}=\sqrt{160} = 4\sqrt{10}$.  (b) The arclength formula gives $\displaystyle\int_1^5 \sqrt{1 + (3)^2}dx = 4\sqrt{10}$.  \checkmark }
 
 \ \\
 \underline{SECTION 6.6} 
@@ -396,6 +397,8 @@ The integral becomes\\
  \\ {\color{red}  The derivatives are $f'(x) = -1/(1-x)$ and $f''(x) = -1/(1-x)^2$.  Plugging in $a=0$ gives $f(0)=0$, $f'(0) = -1$, $f''(0) = -1$.  The quadratic approximation is $Q(x) = p_2(x) = 0 -1(x-0)-1(x-0)^2 = -x-x^2$.  The number we want to approximate is $\ln(0.2)=\ln(1-0.8)=f(0.8) \approx Q(0.8)$.  The quadratic approximation gives $\ln(0.2) \approx -(0.8)-(0.8)^2 = -0.8-0.64 = -0.72 $.}
 \thispagestyle{empty}
 
+\question Find the Taylor series for $f(x) = e^{-5x}$, centered at $x_0 = 1$. Also find the radius of convergence.  
+ \\ {\color{red} Use patterns to figure out the formula for derivatives as $f^{(n)}(x)=(-5)^ne^{-5x}$.  Then the full Taylor series is $\displaystyle\sum_{n=0}^\infty \frac{(-1)^n 5^n e^{-5}}{n!}(x-1)^n$.  Use the ratio test to find that $R=\infty$.}
 
 
 
