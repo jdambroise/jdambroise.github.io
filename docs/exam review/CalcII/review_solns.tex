@@ -1,0 +1,408 @@
+\documentclass{exam}
+
+\usepackage{amssymb, amsmath, textcomp,dsfont, mathrsfs, verbatim, graphicx,color,multicol}
+
+\textwidth 7in
+\oddsidemargin -.25in
+\topmargin -1.9cm
+\headsep -.5cm
+\headheight .9cm
+\textheight 25.2cm
+
+
+\begin{document}
+
+
+\begin{center}
+{\bf Ideal Learning Progression}\\
+$\star$ starred bullets are graded, all bullets are expected
+\end{center}
+$\bullet$  IN CLASS = work with peers, all resources allowed\\
+ \ \\
+ $\bigstar$ HOMEWORK  = individual work, all resources allowed, go to office hours, seek tutoring, get crucial help you need \\
+ \ \\
+$\bullet$ QUIZ YOURSELF = individual work, no notes, calculator ok, work hard on developing independence 
+by seeking out extra textbook problems based on your personal weaknesses\\
+\ \\
+ $\bigstar$ PRE-TEST QUIZZES   = individual work, no notes, calculator ok, work harder on developing independence  \\
+ \ \\
+$\bullet$ EXAM REVIEW PROBLEMS = individual work, no notes, calculator ok, work hardest on developing independence
+by simulating exam scenario with {\bf no resources, only a blank sheet of paper}\\
+\ \\
+ $\bigstar$ EXAMS  = individual work, no notes, no calculator, {\bf no resources, only a blank sheet of paper}\\
+
+
+
+
+\begin{center}{\bf Calculus II (All Exams) Review Problems\\ {\it always show all work}
+}\\  {\color{red} selected brief solutions in red} 
+\end{center}
+
+\noindent Below is NOT a list of exact exam problems!  It's a list of topics and possibilities to jog your memory.\\ Exams are created by:  modifying functions used, changing up algebra needed, using negatives instead of positives or vice versa, using other possible modifications that we covered in classes, on homeworks, on quizzes, etc..\\
+
+\noindent WARNING:  Although sections are listed below, they are NOT listed on the exam!  Make sure you can do the problems without knowing what section it comes from!\\
+
+\underline{SECTION 4.9}
+
+\begin{questions}
+
+\question Find the following indefinite integrals.
+\begin{parts}
+\part $\displaystyle\int \frac{1}{1+9x^2} dx $ 
+\\ {\color{red} $\frac{1}{3}\arctan(3x) + C$ }
+\part $\displaystyle\int \frac{1}{\sqrt{1-9x^2}} dx$
+\\ {\color{red} $\frac{1}{3}\arcsin(3x) + C$ }
+\part $\displaystyle\int \csc(9x)\left(\cot(9x)-\csc(9x)\right)dx$
+\\ {\color{red} $-\frac{1}{9}\csc(9x) + \frac{1}{9}\cot(9x) + C$}
+\end{parts}
+
+\ \\
+\underline{SECTIONS 5.1-5.3}
+
+\question Consider the definite integral $\displaystyle\int_0^{\pi/2}\cos^4(x)dx$.
+  \begin{parts}
+  \item Estimate the integral using a right-handed Riemann sum with $n=4$. 
+  \\ {\color{red} $(\pi/8)(\cos^4(\pi/8)+\cos^4(\pi/4)+\cos^4(3\pi/8)+\cos^4(\pi/2))$}
+  \item Estimate the integral using the Midpoint Rule with $n=4$. 
+  \\ {\color{red} $(\pi/8)(\cos^4(\pi/16)+\cos^4(3\pi/16)+\cos^4(5\pi/16)+\cos^4(7\pi/16))$}
+  \end{parts}
+\question Consider the definite integral $\displaystyle\int_0^4 \frac{x^3-x}{x}dx$
+  \begin{parts}
+  \item Draw the area corresponding to the definite integral. 
+  \\ {\color{red} Draw $f(x) = x^2 - 1$ and shade in the region.}
+  \item Estimate the definite integral using a left-handed Riemann sum with $n=4$. 
+  \\ {\color{red} $  (1)(-1) + (1)(0) + (1)(3) + (1)(8) = 10$}
+  \item Find the exact value of the definite integral using the Fundamental Theorem of Calculus. 
+  \\ {\color{red} $  (4^3/3 - 4) - (0^3/3 - 0) = (64/3) - (12/3) = 52/3$}
+  \end{parts}
+  
+    \newpage\thispagestyle{empty}
+\question Consider the definite integral $\displaystyle\int_0^{\pi/4} \tan(x)dx$.
+  \begin{parts}
+  \item If you used a right-handed Riemann sum to estimate this definite integral, would it result in an overestimate or an underestimate of the actual value? 
+  \\ {\color{red} Tangent is an increasing function, so it would be an overestimate. (If this doesn't make sense, try drawing a graph to see it.)}
+  \item If you used a left-handed Riemann sum to estimate this definite integral, would it result in an overestimate or an underestimate of the actual value? 
+  \\ {\color{red} Tangent is an increasing function, so it would be an underestimate. (If this doesn't make sense, try drawing a graph to see it.)}
+  \end{parts}
+  
+
+
+\ \\
+\underline{SECTION 5.2}
+
+\question Draw the region indicated by the definite integral, and use basic geometry to evaluate it.
+  \begin{parts}
+  \begin{multicols}{2}
+  \item $\displaystyle\int_0^1 \sqrt{1-x^2}dx$ {\color{red} $=\pi/4$}
+  \item $\displaystyle\int_0^3 (x-1)dx$  {\color{red} $=1.5$}
+  \item $\displaystyle\int_{-3}^0\left( 1+\sqrt{9-x^2}\right)dx$ {\color{red} $=3+\frac{9}{4}\pi$}
+    \item $\displaystyle\int_{0}^5 \left| 2x - 4 \right| dx$ 
+  \\ {\color{red} two times integral of |x-2| which is absolute value shifted right by two units = 2( (1/2)(2)(2) + (1/2)(3)(3) ) = 2(2 + 9/2) = 2(13/2)=13}
+  \item $\displaystyle\int_{-4}^4 f(x)dx$ where $f(x) = \left\{ \begin{array}{ll}x & \mbox{for $x\leq 0$}\\
+  x+1& \mbox{for $x>0$}\end{array} \right.$ 
+  \\ {\color{red} The value of the definite integral is $4$.  Draw it to understand.}
+  % -(1/2)(4)(4) + (4)(1) + (1/2)(4)(4) = 4
+  \end{multicols}
+  \end{parts}
+  
+
+\ \\
+\underline{SECTIONS 4.9 \& 5.3}
+\question Find the following indefinite integrals.
+  \begin{parts}
+  \begin{multicols}{2}
+  \part $\displaystyle\int \frac{\sqrt{x}+1}{x} dx$ {\color{red} $= 2\sqrt{x}+\ln|x|+C$}
+  \part $\displaystyle\int (x^2-3)(x+4) dx$  {\color{red} $ = \frac{1}{4}x^4-\frac{3}{2}x^2+\frac{4}{3}x^3-12x+C$}
+  \part $\displaystyle\int \left( 2\csc^2(4x) + \frac{e^{-4x} + x}{4} \right) dx$  {\color{red} $=-\frac{1}{2}\cot(4x) - \frac{1}{16}e^{-4x} + \frac{1}{8}x^2 + C$}
+  \part $\displaystyle\int \frac{3}{10+10x^2} dx$  {\color{red} $=\frac{3}{10}Arctan(x) + C$}
+  \part $\displaystyle\int \frac{\sqrt{9-9x^2}  - 3}{\sqrt{9-9x^2}} dx $  {\color{red} $=x - Arcsin(x) + C$}
+  \end{multicols}
+  \end{parts}
+
+
+
+\ \\
+\underline{SECTION 5.4}
+
+\question Find the value of the definite integral $\displaystyle\int \frac{x^3\cos(x)}{x^6+3}dx$. 
+\\ {\color{red} The value of the integral is zero.  Show the work to conclude $f(x)$ is an odd function by showing $f(-x)=f(x)$.}
+
+\question Find the value of the definite integrals $\displaystyle\int_{-\pi/3}^{\pi/3} \frac{x\sec(x)}{\sec^2(x) + 1} dx$ \\ {\color{red} The function is odd because $f(-x) = (-x)sec(-x)/(sec^2(-x)+1) = -xsec(x)/(sec^2(x)+1) = -f(x)$.  Therefore the value of the integral is zero.}
+
+\question Use the trig. identity $\cos^2(x) = \frac{1}{2}\left( 1 + \cos(2x) \right)$ in order to find $\displaystyle\int_0^{\pi/6} \cos^2(3x) dx$.
+\\  {\color{red} The integral becomes $\frac{1}{2}\displaystyle\int_0^{\pi/6} \left( 1 + \cos(6x) \right) dx  = \frac{1}{2} \left( \frac{\pi}{6} + \frac{1}{6}\sin(\pi)\right) - \frac{1}{2} \left( 0 + \frac{1}{6}\sin(0)\right) = \frac{\pi}{12} $}
+
+\question Find the average value of $f(x)=\sec^2(x)$ on the interval $\left[ 0, \frac{\pi}{4} \right]$.  
+ {\color{red}  The average value is $4/\pi$}
+% (4/pi) times (tan(pi/4) - tan(0)) = (4/pi)
+
+\question Find the average value of $f(x) = x^2$ on the interval $[0,1]$.  {\color{red} The average value is $1/3$}
+
+    \newpage\thispagestyle{empty}
+\ \\  
+  \underline{SECTION 6.1}
+
+\question An object moves according to the acceleration function $a(t)=t+4$, has an initial velocity $v(0)=5$ and the location at time $t=1$ is $s(1)=10$.  Find the position function $s(t)$. 
+ {\color{red} $s(t)=\frac{1}{6}t^3+2t^2+5t+17/6$}
+%1/6 + C=3
+%C=(18-1)/6=17/6
+
+\question A honeybee population starts with $100$ bees and increases at a rate of $n'(t)$ bees per week.  What does $100+\displaystyle\int_0^{15}n'(t)dt$ represent? 
+ {\color{red} the number of bees after 15 weeks (since 100 represents the initial number of bees and the integral represents the change in bees in 15 weeks).}
+
+\question Water flows from a storage tank at a rate of $r(t)=200-4t$ liters per minute for $0\leq t\leq 50$.  Find the amount of water that has leaked out of the tank in the first ten minutes. {\color{red} $\displaystyle\int_0^{10} (200-4t)dt=1800$ liters}
+
+\ \\
+\underline{SECTION 5.5}
+
+\question Find the following indefinite integrals.
+  \begin{parts}
+  \begin{multicols}{2}
+\part $\displaystyle\int \frac{x}{1+9x^2} dx$
+\\ {\color{red} $\frac{1}{18}\ln(1+9x^2) + C$ (sub. $u=1+9x^2$)}
+\part $\displaystyle\int \frac{x}{\sqrt{1-9x^2}} dx$
+\\ {\color{red} $-\frac{1}{9}\sqrt{1-9x^2}+C$ (sub. $u=1-9x^2$)}
+  \part $\displaystyle\int \frac{5}{25+x^2}dx$ 
+  \\ {\color{red} $ = \frac{5}{25}\displaystyle\int \frac{1}{1+(x/5)^2}dx = Arctan(x/5)+C$}
+  \part $\displaystyle\int \frac{r^2}{r^3+1}dr$ 
+  \\ {\color{red} $ = \frac{1}{3}\ln\left|  r^3+1 \right| +C$}
+  \part $\displaystyle\int \frac{1}{x\left( \ln(x) \right)^3 }dx$ 
+  \\ {\color{red} $ = \frac{-1}{2(\ln(x))^2}+C$ (u-sub, $u=\ln(x)$)}
+  \part $\displaystyle\int \left( 1+\cos(t) \right)^6 \sin(t)dt $ 
+  \\ {\color{red} = $ \frac{-1}{7}\left(  1+\cos(t) \right)^7 +C$ (u-sub, $u=1+\cos(t)$)}
+  \part $\displaystyle\int y^3(  y^4 +5)^6 dy $ 
+  \\ {\color{red} $= \frac{1}{28}\left( y^4+5 \right)^7 + C$ (u-sub, $u=y^4+5$)}
+  \part $\displaystyle\int x\cos(x^2)\sin(x^2)dx$ {\color{red} Start with $u=x^2$.}
+  \\ {\color{red}  
+ Solution 1:  $\frac{-1}{4}\cos^2(x^2)+C$ (w-sub, $w=\cos(u)$)  \\
+ Solution 2:  $\frac{1}{4}\sin^2(x^2)+C$ (w-sub, $w=\sin(u)$)  \\
+  Solution 3: $\frac{-1}{8}\cos(2x^2)+C$ \\
+  (using trig id. to write $\cos(u)\sin(u)=\frac{1}{2}\sin(2u)$)}
+  \part $\displaystyle\int \frac{\sec^2(x)\tan(x)}{\sqrt{1+\sec^2(x)}} dx$
+  \\ {\color{red} $=\sqrt{1+\sec^2(x)} + C$ (start with u-sub, $u=\sec(x)$, then do a second substitution)}
+  \part $\displaystyle\int \frac{1}{2+6x+9x^2}dx$\\
+{\it Hint:} Start by completing the square in the denominator, and then do a substitution.
+\\ {\color{red} Complete the square in the denominator to obtain $\displaystyle\int \frac{1}{1+(1+3x)^2}dx$.  Next do u-sub with $u=1+3x$, $du = 3dx$ so that the integral becomes $\frac{1}{3}\displaystyle\int \frac{1}{1+u^2}du = \frac{1}{3}\arctan(1+3x) + C$.}
+  \end{multicols}
+  \end{parts}
+
+\question Find the average value of $f(x)=\tan(x)$ on the interval $\left[ 0, \frac{\pi}{4} \right]$.  {\color{red}  $\ln(2)/2$}
+
+
+
+\ \\
+\underline{SECTION 6.2}
+
+\question Find the area of the region enclosed by the curves $y=x^2-2x$, $y=x+4$.  Include a rough sketch. 
+\\ {\color{red}   $\displaystyle\int_{-1}^4 \left(  (x+4)-(x^2-2x) \right)  dx = 125/6$.}
+
+\question Find the area of the region enclosed by the curves $x=2y^2$, $x=4+y^2$.   Include a rough sketch. 
+\\ {\color{red}   $\displaystyle\int_{-2}^2 (4+y^2-2y^2)dy = 32/3$.}
+
+\question Draw and find the area enclosed by $y=0$, $y=\sqrt{x}$, $y=\sqrt{4-x}$.  Include a rough sketch.  
+\\ {\color{red} $\displaystyle\int_0^2 \sqrt{x} dx + \displaystyle\int_2^4 \sqrt{4-x}dx = (8/3)\sqrt{2}$}
+
+    \newpage\thispagestyle{empty}
+
+\ \\
+\underline{SECTION 6.3 }
+
+\question Find the volume of the solid obtained by rotating the region bounded by $y = 1$, $y= \sqrt{\sin(x)}$, $x=0$ about the x-axis.   Include a rough sketch.
+\\ {\color{red} First note that the two functions meet when $1=\sqrt{\sin(x)}$ which occurs at $x=\pi/2$.  Thus the integral is $\displaystyle\int_0^{\pi/2} \pi \left( 1 \right)^2 - \pi \left( \sqrt{\sin(x)} \right)^2 dx$  $ = \pi \left( \displaystyle\int_0^{\pi/2}{ 1 dx} - \displaystyle\int_0^{\pi/2} \sin(x)dx \right)$ $ = \pi \left( \frac{\pi}{2} + \cos(\pi/2) - \cos(0)\right) = \pi^2/2 - \pi$.}  
+
+\question Find the volume of the solid obtained by rotating the region bounded by $y=x^3$, $x=0$, $y = 8$ in the first quadrant about the y-axis.   Include a rough sketch.
+\\ {\color{red} Rewrite the cubic function $x =  y^{1/3}$.  The volume is given by the integral $\displaystyle\int_0^{8} \pi \left( y^{1/3} \right)^2 dy$ $ = \pi \left( \frac{3}{5}8^{5/3} - \frac{3}{5}0^{5/3}   \right) = \pi \cdot \frac{3}{5}\cdot 2^5$. This answer is simplified enough for an exam.}
+
+\ \\
+\underline{SECTION 6.4 }
+
+\question Use shells/cylinders to redo the previous problem.     Include a rough sketch.
+\\ {\color{red} Using cylinders the volume is expressed by the integral $\displaystyle\int_0^2 2\pi x \left( 8 - x^3 \right)dx$ where the height of the cylinder at $x$ is given by $H(x) = 8 - x^3$.  Separating the integrals and using properties of integrals the volume formula becomes $8\pi  \displaystyle\int_0^2 2x dx  - 2\pi \displaystyle\int_0^2  x^4 dx$ $ = 8\pi  (2^2-0^2)  -2\pi (2^5/5 - 0^5/5)$ $ = \pi \cdot 2^5 - \pi\cdot 2^6/5  = \pi \cdot 2^5 \left( 1-2/5 \right) = \pi \cdot 2^5 \cdot \frac{3}{5}$.  Notice this agrees with the answer from the previous problem!}
+
+\question Find the volume of the solid obtained by rotating the region bounded by $y=e^{x^2}$, $x=0$, $y = e^{9}$ in the first quadrant about the y-axis.  Use shells/cylinders.   Include a rough sketch.
+\\ {\color{red} Using cylinders the volume is expressed by the integral $\displaystyle\int_0^3 2\pi x \left( e^9 - e^{x^2}\right)dx$ where the height of the cylinder at $x$ is given by $H(x) = e^9 - e^{x^2}$.  Separating the integrals and using properties of integrals the volume formula becomes $\pi e^9 \displaystyle\int_0^3 2x dx  -\pi \displaystyle\int_0^3  2x e^{x^2} dx$ $ = \pi e^9 (3^2-0^2)  -\pi (e^{3^2}-e^{0^2})$ $ = \pi (8e^9 + 1)$.}
+
+\ \\
+\underline{SECTION 6.5} 
+
+\question Find the length of the line $y=3x+2$ from $x=1$ to $x=5$ using (a) basic geometry, and then (b) the arclength formula.  Be sure that you obtain the same answer for both parts (a) and (b).   Include a rough sketch for each.
+\\ {\color{red} (a) The desired length is the hypoteneuse of a triangle with base $4$ and height $12$, so using the Pythagorean theorem the length is $\sqrt{16+144}=\sqrt{160} = 4\sqrt{10}$.  (b) The arclength formula gives $\displaystyle\int_1^5 \sqrt{1 + (3)^2}dx = 4\sqrt{10}$.  \checkmark }
+
+\ \\
+\underline{SECTION 6.6} 
+
+\question Find the surface area of the surface generated by rotating $f(x) = \frac{x^4}{8} + \frac{1}{4x^2}$ about the x-axis from $x=1$ to $x=2$.
+\\ {\color{red} $\displaystyle\int_a^b 2\pi f(x)\sqrt{1+f'(x)^2}dx $ $  = \displaystyle\int_1^2 2\pi \left(  \frac{x^4}{8} + \frac{1}{4x^2} \right) \sqrt{ 1 + \left( \frac{x^3}{2} - \frac{1}{2x^3}\right)^2}dx$ $  = \displaystyle\int_1^2 2\pi \left(  \frac{x^4}{8} + \frac{1}{4x^2} \right) \sqrt{ \left( \frac{x^3}{2} + \frac{1}{2x^3}\right)^2}dx$ $  = \displaystyle\int_1^2 2\pi \left(  \frac{x^4}{8} + \frac{1}{4x^2} \right) \left( \frac{x^3}{2} + \frac{1}{2x^3}\right)dx$ $ = 2\pi \displaystyle\int_1^2 \left( \frac{x^7}{16} + \frac{3x}{16} + \frac{1}{8x^5} \right)  dx$ $ = 2\pi \left|_1^2 \left( \frac{x^8}{128} + \frac{3x^2}{32} - \frac{1}{32x^4} \right) \right.$ $ = 2\pi \left(2 + \frac{3}{8} - \frac{1}{512 }\right) - 2\pi\left( \frac{1}{128} + \frac{3}{32} - \frac{1}{32}\right)$.  Note: on the exam you can leave numerical expressions like this un-simplified.  Here the simplified answer is $\frac{1179}{256}\pi$. }
+
+    \newpage\thispagestyle{empty}
+
+\ \\
+\underline{SECTIONS 5.5, 7.2 - 7.3 }
+\thispagestyle{empty}
+
+\question Find the following indefinite integrals using the appropriate method.  
+\begin{parts}
+\begin{multicols}{2}
+\part $\displaystyle\int \cos^7(t)\sin^3(t)dt$
+\\ {\color{red} Separate out $du = \sin(t)dt$ so that $u=-\cos(t)$. \\
+ Then the integral becomes \\
+  $\displaystyle\int -u^7(1-u^2)du = -\frac{1}{8}\cos^8(t) + \frac{1}{10}\cos^{10}(t) + C$.}
+\part $\displaystyle\int \tan^7(w)\sec^4(w)dw$
+\\ {\color{red} Separate out $du = \sec^2(w)dw$ so that $u = \tan(w)$.\\
+Then the integral becomes \\
+$\displaystyle\int u^7(1+u^2)du = \frac{1}{8}\tan^8(w) + \frac{1}{10}\tan^{10}(w) + C$.}
+\part $\displaystyle\int (\pi x)^2 e^{4x}dx$
+\\ {\color{red} Factor out $\pi^2$ from the integral, then do integration by parts twice to obtain $\frac{\pi^2}{32}\left( 8x^2-4x+1 \right)e^{4x}+C$.}
+\part $\displaystyle\int \frac{1}{2+6x+9x^2}dx$
+\\ {\color{red} Complete the square in the denominator to obtain $\displaystyle\int \frac{1}{1+(1+3x)^2}dx$.  Next do u-sub with $u=1+3x$, $du = 3dx$ so that the integral becomes $\frac{1}{3}\displaystyle\int \frac{1}{1+u^2}du = \frac{1}{3}\arctan(1+3x) + C$.}
+\part $\displaystyle\int e^{2x}\sin(x) dx$
+\\ {\color{red} Do integration by parts twice then rearrange the equation and solve for the integral to obtain $ -\frac{1}{5}e^{2x}(\cos(x)-2\sin(x))+C $.}
+\part $\displaystyle\int s \sec^2(s) ds$ 
+\\ {\color{red} Integration by parts with $u=s$ and $dv = \sec^2(s)ds$.  Then $du = ds$ and $v = \tan(s)$.  The integral is \\ $s\tan(s) - \displaystyle\int \tan(s)ds$ $ = s\tan(s) - \ln\left| \sec(s) \right| + C$.}
+\part $\displaystyle\int x^2\ln(x)dx$
+\\ {\color{red} Integration by parts with $u=\ln(x)$ and $dv = x^2dx$.  Then $du = \frac{1}{x}dx$ and $v = \frac{1}{3}x^3$.  The integral is $ \frac{1}{3}x^3\ln(x) - \displaystyle\int \frac{1}{3}x^3 \frac{1}{x}dx =  \frac{1}{3}x^3\ln(x) -  \frac{1}{9}x^3 + C$.}
+\part $\displaystyle\int x\sin^2(x)dx$
+\\ {\color{red} Integration by parts with $u=x$ and $dv = \sin^2(x)dx $$ = \frac{1}{2}(1-\cos(2x)) dx$.  
+Then $du = dx$ and $v = \frac{1}{2}\left(x - \frac{1}{2}\sin(2x) \right)$.  The integral is equal to \\
+$=\frac{x}{2}\left(x - \frac{1}{2}\sin(2x) \right) - \displaystyle\int \frac{1}{2}(x - \frac{1}{2}\sin(2x)) dx$\\
+ $ = \frac{x}{2}(x - \frac{1}{2}\sin(2x) ) -  \frac{1}{2}(\frac{1}{2}x^2 + \frac{1}{4}\cos(2x) ) + C$.  }
+\part $\displaystyle\int x^3 \sin(x^2) dx$
+\\ {\color{red} Integration by parts with $u=x^2$ and $dv = x\sin(x^2)dx$.  Then $du = 2xdx$ and $v = -\frac{1}{2}\cos(x^2)$.  The integral is equal to \\
+$ = -\frac{x^2}{2}\cos(x^2) -  \displaystyle\int  -\frac{1}{2}\cos(x^2)\cdot 2xdx$ \\
+$ = -\frac{x^2}{2}\cos(x^2) + \displaystyle\int  \cos(x^2)\cdot xdx$\\
+$ = -\frac{x^2}{2}\cos(x^2) + \frac{1}{2}\sin(x^2) + C $. }
+\end{multicols}
+\end{parts}
+
+
+\ \\
+\underline{SECTION 6.3 \& 7.2 }
+
+\question Find the volume of the solid obtained by rotating the region bounded by $y = \sqrt{\frac{\pi}{2}}$, $y= \sqrt{\arcsin(x)}$, $x=0$ about the x-axis.
+\\ {\color{red} First note that the two functions meet when $\arcsin(x)=\pi/2$ which occurs at $x=1$.  Thus the integral is $\displaystyle\int_0^1 \pi \left( \sqrt{\frac{\pi}{2}} \right)^2 - \pi \left( \sqrt{\arcsin(x)} \right)^2 dx$ $ = \pi \left( \displaystyle\int_0^1 \frac{\pi}{2} dx - \displaystyle\int_0^1 \arcsin(x)dx \right)$ $ = \pi \left( \frac{\pi}{2} - \displaystyle\int_0^1 \arcsin(x)dx \right) $.  Now the remaining integral is evaluated using integration by parts with $u=\arcsin(x)$ and $dv=dx$.  Then $du = \frac{1}{\sqrt{1-x^2}}dx$ and $v=x$.  The volume then becomes $\pi \left( \frac{\pi}{2} - \left( \left|_0^1 x\arcsin(x) \right. - \displaystyle\int_0^1 \frac{x}{\sqrt{1-x^2}} dx \right) \right) $ .   Recall from trig that $sin(\pi/2)=1$ and therefore $\arcsin(1)=\pi/2$.  The volume then becomes 
+$= \pi \left( \frac{\pi}{2} - \left( \frac{\pi}{2}  - \displaystyle\int_0^1 \frac{x}{\sqrt{1-x^2}} dx \right) \right) $
+$= \pi  \displaystyle\int_0^1 \frac{x}{\sqrt{1-x^2}} dx  $.  To finish the problem perform a u-sub. with $u=1-x^2$, $du=-2xdx$.  The volume then becomes $ = -\pi \left|_0^1 \sqrt{1-x^2}  \right. = -\pi(0) + \pi = \pi$.
+}  
+
+    \newpage\thispagestyle{empty}
+
+\question Find the volume of the solid obtained by rotating the region bounded by $y=e^{x^2}$, $x=0$, $y = e^{9}$ in the first quadrant about the y-axis.
+\\ {\color{red} Rewrite the exponential function as $x = \sqrt{ ln(y) }$.  The volume is given by the integral $\displaystyle\int_1^{e^{9}} \pi \left( \sqrt{ ln(y) } \right)^2 dy$ $ = \pi \displaystyle\int_1^{e^9} \ln(y) dy$.  In order to integrate the logarithm use integration by parts with $u=\ln(y)$ and $dv=dy$ then $du = \frac{1}{y} dy$ and $v=y$.  The volume integral then becomes $=\pi \left|_1^{e^9}\left(  y\ln(y) - \displaystyle\int y \frac{1}{y}dy \right) \right.$ $ =\pi \left|_1^{e^9}\left(  y\ln(y) - y \right) \right.  $ $ = \pi(e^9\ln(e^9) - e^9) - \pi(\ln(1) - 1)$ $ =  \pi(8e^9 + 1)$.  }
+
+
+
+
+\ \\
+\underline{SECTIONS 7.4 - 7.5 }
+
+\question Find the following indefinite integrals using the appropriate method.  
+\begin{parts}
+\begin{multicols}{2}
+\part $\displaystyle\int \frac{1}{x^2\sqrt{1-9x^2}}dx$
+\\ {\color{red} Use trig. sub. $x=\frac{1}{3}\sin(\theta)$ $\Rightarrow$ $dx = \frac{1}{3}\cos(\theta)d\theta$. \\
+The integral becomes\\
+ $\displaystyle\int \frac{1}{\frac{1}{9}\sin^2(\theta)\sqrt{1-\sin^2(\theta)}}\cdot \frac{1}{3}\cos(\theta) d\theta$ \\
+$= 3\displaystyle\int \csc^2(\theta) d\theta $$ = -3\cot(\theta) + C =- \frac{\sqrt{1-9x^2}}{x} + C$ }
+\part $\displaystyle\int \frac{1}{1 - 9x^2}dx$
+\\ {\color{red} Use trig. sub. $x=\frac{1}{3}\sin(\theta)$ $\Rightarrow$ $dx = \frac{1}{3}\cos(\theta)d\theta$. \\
+The integral becomes $\displaystyle\int \frac{1}{1-\sin^2(\theta)}\cdot \frac{1}{3}\cos(\theta) d\theta =\frac{1}{3} \displaystyle\int \sec(\theta)d\theta = \frac{1}{3} \displaystyle\int  \frac{\sec^2(\theta) + \sec(\theta)\tan(\theta)}{\sec(\theta) + \tan(\theta)}d\theta = \frac{1}{3}  \ln|\sec(\theta) + \tan(\theta)| + C = \frac{1}{3}  \ln\left| \frac{1+3x}{\sqrt{1-9x^2}} \right| + C$.}
+\part $\displaystyle\int \frac{x^3}{\sqrt{1+9x^2}} dx$
+\\ {\color{red} Use trig. sub. $x=\frac{1}{3}\tan(\theta)$ $\Rightarrow$ $dx = \frac{1}{3}\sec^2(\theta)d\theta$.\\
+Then after simplifying do a second substitution $u = \sec(\theta)$.
+The integral becomes\\
+ $\displaystyle\int \frac{\frac{1}{27}\tan^3(\theta)}{\sqrt{1 + \tan^2(\theta)}}\cdot \frac{1}{3}\sec^2(\theta)d\theta = \frac{1}{81}\displaystyle\int \tan^3(\theta)\sec(\theta)d\theta$$ =  \frac{1}{81}\displaystyle\int (\sec^2(\theta)-1)\cdot \sec(\theta)\tan(\theta)d\theta$ $ = \frac{1}{81}\displaystyle\int (u^2-1) du$ $ = \frac{1}{81}\left(\frac{1}{3}\sec^3(\theta) - \sec(\theta) \right) + C $\\ $ =  \frac{1}{81}\left(\frac{1}{3} (\sqrt{1+9x^2})^3 - \sqrt{1+9x^2} \right) + C  $}
+ \part $\displaystyle\int \mbox{\large $\frac{5x^2+x+3}{x^3+x}dx$}$
+ \\ {\color{red} Rewriting the integrand using PFD gives\\ $\displaystyle\int \frac{3}{x} + \frac{2x+1}{x^2+1}dx = 3\ln|x| + \ln|x^2+1| + arctan(x)+C$}
+ \part $\displaystyle\int \mbox{\large $\frac{x^3+4}{x^2+4}dx$}$\\
+  {\it Note:} PFD only works if the degree of the numerator is LESS than the degree of the denominator.  For this problem begin by using polynomial division.  Then use PFD on the resulting expression. 
+ \\ {\color{red} Use polynomial division to rewrite the integrand as follows: $\displaystyle\int x + \frac{4-4x}{x^2+4}dx$.  Next perform PFD on the rational function part of the integrand to obtain $\displaystyle\int x + \frac{4}{x^2+4} + \frac{-4x}{x^2+4}dx = x^2/2 + 2arctan(x/2)-2ln|x^2+4| + C$.}
+\end{multicols}
+\end{parts}
+
+\ \\
+\underline{SECTION 7.8}
+
+\question Find the improper integrals.
+\begin{parts}
+\begin{multicols}{2}
+\part $\displaystyle\int_0^1 \frac{1}{x^3 + x}dx$
+\\ {\color{red} First focus on the indefinite integral, using PFD we obtain $\displaystyle\int \frac{1}{x^3 + x} dx = \displaystyle\int \frac{1}{x} - \frac{x}{x^2+1} dx = \ln|x| - \frac{1}{2} \ln|x^2+1| + C$.  Now the improper integral, when written as a limit, is $\displaystyle\int_0^1 \frac{1}{x^3 + x}dx = \displaystyle\lim_{t\rightarrow 0^+} \displaystyle\int_t^1 \frac{1}{x^3 + x}dx = \displaystyle\lim_{t\rightarrow 0^+} \left( -\frac{1}{2}\ln(2) \right) - \left(  \ln|t| - \frac{1}{2} \ln|t^2+1| \right)$.  Taking the limit gives the final answer, that the integral diverges to infinity.}
+\part  $\displaystyle\int_0^\infty  te^{-5t}dt$ 
+\\ {\color{red} Use integration by parts.  State the limit carefully and write out all the details.  Converges to $\frac{1}{25}$.}
+\part  $\displaystyle\int_{-\infty}^\infty \frac{x^2}{9+x^6}dx$ 
+\\ {\color{red} Rewrite $x^6 = (x^3)^2$ and use substitution with $u=x^3$.  State the limit carefully and write out all the details.  Converges to $frac{\pi}{9}$.}
+\part $\displaystyle\int_e^\infty \frac{1}{x\left( \ln(x) \right)^3}dx$ 
+\\ {\color{red} Use substitution with $u=\ln(x)$.  State the limit carefully and write out all the details.  Converges to $\frac{1}{2}$.}
+\part  $\displaystyle\int_{-1}^1 \frac{e^x}{e^x-1}dx $  
+\\ {\color{red} Use substitution with $u=e^x-1$.  State the limit carefully and write out all the details.  Diverges.}
+\end{multicols}
+\end{parts}
+
+\ \\
+\underline{SECTIONS 8.3-8.4}
+
+\question Find whether each series converges or diverges.  State clearly which test you are using and how you come to your conclusions.
+\begin{parts}
+\begin{multicols}{2}
+\part $\displaystyle\sum_{n=1}^\infty\left(\frac{1}{n^2}+\frac{2}{n}\right)$
+\\ {\color{red} This series is bigger than two times the harmonic series, which diverges, so the series diverges by the comparison test.}
+\part $\displaystyle\sum_{n=1}^\infty \frac{5^n}{n^5}$
+\\ {\color{red} The terms of the sum approach infinity as $n\rightarrow \infty$.  The series diverges by the divergence test.}
+\part $\displaystyle\sum_{n=1}^\infty \frac{e^n}{2^{n-1}}$
+\\ {\color{red} The series is geometric with $r=e/2 > 1$ so it diverges.}
+\part $\displaystyle\sum_{n=1}^\infty\frac{3}{n^2+3n}$
+\\ {\color{red} Use PFD to rewrite the series as $\displaystyle\sum_{n=1}^\infty\left(\frac{1}{n}-\frac{1}{(n+3)}\right)$.  Then the series is telescoping.  Find a formula for the partial sums.  The series converges to $11/6$.}
+\part $\displaystyle\sum_{n=1}^\infty\frac{14n^2+2n+3}{11n^2+5}$
+\\ {\color{red} The terms of the sum approach $14/11 \neq 0$, so the series diverges by the divergence test.}
+\part $\displaystyle\sum_{n=0}^\infty \frac{1+2^n}{3^n}$
+\\ {\color{red} Write it as the sum of two different series, the first is geometric with $r=1/3$ and the second is geometric with $r=2/3$.  Both series converge and the total sum is $\frac{1}{1-1/3} + \frac{1}{1-2/3} = 4.5$.}
+\part $\displaystyle\sum_{n=0}^\infty (0.46)^{n-1}$
+\\ {\color{red} The series is geometric with $r=0.46$.  It converges to $\frac{1}{0.46}\left( \frac{1}{1-0.46}\right) = \frac{100}{46}\cdot \frac{100}{54} = \frac{50}{23}\cdot\frac{50}{27} = \frac{2500}{621}$.}
+\end{multicols}
+\end{parts}
+
+\thispagestyle{empty}
+\ \\
+\underline{SECTIONS 8.4 - 8.6}
+
+\question Determine whether the following series converge or diverge.  State clearly which test you are using and how you come to your conclusions.
+\begin{parts}
+\begin{multicols}{2}
+\part $\displaystyle\sum_{n=1}^\infty  \left( \frac{ 1+2n+n^2}{n^2} \right)^{n^2}$ 
+ \\ {\color{red} Applying the root test gives $\displaystyle\lim_{n\rightarrow \infty} \sqrt[n]{|a_n|} = \displaystyle\lim_{n\rightarrow\infty}   \left( \frac{ 1+2n+n^2}{n^2} \right)^{n} = \displaystyle\lim_{n\rightarrow\infty}   \left( \frac{ (1+n)^2}{n^2} \right)^{n} =  \displaystyle\lim_{n\rightarrow\infty}   \left( \frac{ 1+n}{n} \right)^{2n} =  \left(\displaystyle\lim_{n\rightarrow\infty}   \left( \frac{ 1+n}{n} \right)^{n}\right)^2 =  \left(\displaystyle\lim_{n\rightarrow\infty}   \left( 1 + \frac{ 1}{n} \right)^{n}\right)^2 = e^2>1$.  The series diverges by the root test.}
+\part $\displaystyle\sum_{n=1}^\infty \frac{(-1)^n\sin(n) n^7}{8n^7+1}$
+ \\ {\color{red} The limit of the terms of the sequence is not zero because $\displaystyle\lim_{n\rightarrow\infty} \frac{n^7}{8n^7+1} = \frac{1}{8}$ and $\displaystyle\lim_{n\rightarrow} (-1)^n \sin(n)$ does not exist (oscillates).  Thus the sequence diverges by the divergence test.}
+\part $\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}$ 
+{\color{red} Using the ratio test we have $\displaystyle\lim_{n\rightarrow\infty} \left| \frac{a_{n+1}}{a_n} \right| = \displaystyle\lim_{n\rightarrow\infty} \frac{(n+1)^2}{n^2}\cdot \frac{n!}{(n+1)!} = \displaystyle\lim_{n\rightarrow\infty} \frac{n^2+2n+1}{n^2} \cdot \displaystyle\lim_{n\rightarrow\infty} \frac{1}{(n+1)} = 1\cdot 0 = 0 < 1$.  The series converges by the ratio test.}
+\part $\displaystyle\sum_{n=1}^\infty \frac{\sqrt{n}}{\sqrt{n} + n^3}$
+ \\  {\color{red} This series should be comparable to a p-series because the highest powers are $\frac{n^{1/2}}{n^3} = \frac{1}{n^{2.5}}$.  To verify it's comparable use the limit comparison test $\displaystyle\lim_{n\rightarrow\infty} \frac{\sqrt{n}/(\sqrt{n} + n^3)}{1/n^{2.5}} = \displaystyle\lim_{n\rightarrow\infty} \frac{ n^3}{\sqrt{n} + n^3} = 1 \checkmark$.  Yes, they are comparable since the value of the limit is nonzero and also not infinite.  Since $\displaystyle\sum_{n=1}^\infty \frac{1}{n^{2.5}}$ converges, $\displaystyle\sum_{n=1}^\infty \frac{\sqrt{n}}{\sqrt{n} + n^3}$ also converges. }
+\part $\displaystyle\sum_{n=1}^\infty  \frac{-5\ln(n)}{n^6}$
+ \\  {\color{red} This series is NOT comparable to a p-series, the divergence test doesn't apply, the ratio test is inconclusive, and the root test is not appropriate.  However you must notice that the function $f(x) = \frac{-5\ln(x)}{x^6}$ can be integrated!  We will apply the integral test by determining whether the improper integral $\displaystyle\int_1^\infty \frac{-5\ln(x)}{x^6}dx$ converges or diverges.  Use IBP with $u=\ln(x)$ and $dv=-5x^{-6}dx$ (thus $du = (1/x)dx$ and $v=x^{-5}$) to integrate:  $\displaystyle\int \frac{-5\ln(x)}{x^6}dx = \ln(x)x^{-5} - \displaystyle\int x^{-5}(1/x)dx = \ln(x)x^{-5} - \displaystyle\int x^{-6}dx = \ln(x)x^{-5} + \frac{1}{5}x^{-5} + C$.  Rewriting the improper integral as a limit gives $\displaystyle\int_1^\infty \frac{-5\ln(x)}{x^6}dx = \displaystyle\lim_{t\rightarrow\infty} \displaystyle\int_1^t \frac{-5\ln(x)}{x^6}dx =  \displaystyle\lim_{t\rightarrow\infty}  \left( \ln(t)t^{-5} + \frac{1}{5}t^{-5} \right) - \left( \ln(1)1^{-5} + \frac{1}{5}1^{-5} \right) = \displaystyle\lim_{t\rightarrow\infty}  \left( \ln(t)t^{-5} + \frac{1}{5}t^{-5} \right) -  \frac{1}{5} $.  The first term in the limit should be written as $\displaystyle\lim_{t\rightarrow\infty}  \frac{\ln(t)}{t^{5}}$, and then apply L'Hopital's rule one time to find that the limit goes to zero.  The second part of the limit $\displaystyle\lim_{t\rightarrow\infty} \frac{1}{5}t^{-5}$ also goes to zero.  So the final value of the improper integral is $0+0-\frac{1}{5} = -\frac{1}{5}$.  Since the improper integral converges, the series $\displaystyle\sum_{n=1}^\infty  \frac{-5\ln(n)}{n^6}$ also converges by the integral test.}
+\part $\displaystyle\sum_{n=2}^\infty \frac{(-1)^{n-1} \ln(n)}{n}$
+ \\ {\color{red} In order to use the Alternating Series Test (AST) we want to prove that for $b_n = ln(n)/n$, (i) $b_n$ is decreasing as $n$ increases and (ii) $\displaystyle\lim_{n\rightarrow\infty} \ln(n)/n = 0$.  Part (ii) can be easily verified using L'Hopital's rule.  For part (i), we can switch to $f(x) = ln(x)/x$ and use the first derivative $f'(x) = (1-\ln(x))/x^2$ to verify that indeed $f'(x) < 0$ for $x>e$ and therefore $f(x)$ is decreasing for $x>e$.  Thus $b_n$ is decreasing for $n>3$.  This is enough to satisfy AST, and so the series converges.}
+\end{multicols}
+\end{parts}
+
+\ \\
+\underline{SECTION 9.1 - 9.3}
+
+\question Determine for which $x$ values the series $\displaystyle\sum_{n=0}^\infty \frac{(2x-7)^{2n+1}}{3^n n!}$ converges. 
+ \\  {\color{red} Using the ratio test gives $\displaystyle\lim_{n\rightarrow\infty} \left| \frac{a_{n+1}}{a_n} \right| = \displaystyle\lim_{n\rightarrow\infty} \frac{(2x-7)^{2(n+1)+1}}{(2x-7)^{2n+1}} \cdot \frac{3^n}{3^{n+1}} \cdot \frac{n!}{(n+1)!}  = \displaystyle\lim_{n\rightarrow\infty} (2x-7)^2\cdot \frac{1}{3} \cdot \frac{1}{(n+1)} = (2x-7)^2\cdot \frac{1}{3} \displaystyle\lim_{n\rightarrow\infty}  \cdot \frac{1}{(n+1)}  = 0 < 1$.  Here the limit is zero {\it no matter what $x$ is!} This shows, by the ratio test, that every x-value converges.  Thus the interval of convergence is $(-\infty, \infty)$. }
+
+\question Determine for which $x$ values the series $\displaystyle\sum_{n=0}^\infty \frac{(2x-7)^{2n+1}}{3^n }$ converges.  
+ \\ {\color{red} Using the ratio test gives $\displaystyle\lim_{n\rightarrow\infty} \left| \frac{a_{n+1}}{a_n} \right| = \displaystyle\lim_{n\rightarrow\infty} \frac{(2x-7)^{2(n+1)+1}}{(2x-7)^{2n+1}} \cdot \frac{3^n}{3^{n+1}}   =  (2x-7)^2\cdot \frac{1}{3} $.  Here the limit is different for each x-value.  Only the x-values for which $\frac{(2x-7)^2}{3} < 1$ will the series be convergent by the ratio test.  This inequality is equivalent to $(2x-7)^2<3$ $\Rightarrow$ $|2x-7| < \sqrt{3}$.  The interval of convergence is $\left( \frac{7}{2} - \sqrt{3}, \frac{7}{2} + \sqrt{3}\right)$ (and the radius of convergence is $\sqrt{3}$.}
+
+\question Find the quadratic approximation for the function $f(x) = \ln(1-x)$ at $x=0$ and use it to estimate $\ln(0.2)$.  
+ \\ {\color{red}  The derivatives are $f'(x) = -1/(1-x)$ and $f''(x) = -1/(1-x)^2$.  Plugging in $a=0$ gives $f(0)=0$, $f'(0) = -1$, $f''(0) = -1$.  The quadratic approximation is $Q(x) = p_2(x) = 0 -1(x-0)-1(x-0)^2 = -x-x^2$.  The number we want to approximate is $\ln(0.2)=\ln(1-0.8)=f(0.8) \approx Q(0.8)$.  The quadratic approximation gives $\ln(0.2) \approx -(0.8)-(0.8)^2 = -0.8-0.64 = -0.72 $.}
+\thispagestyle{empty}
+
+
+
+
+
+
+
+
+\end{questions}
+
+\end{document}
