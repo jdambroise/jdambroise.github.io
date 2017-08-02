@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{High Expectations}{1}{0}{1}
+\beamer@sectionintoc {2}{Harmful Math Stereotypes}{5}{0}{2}
+\beamer@sectionintoc {3}{ Advice From Students}{22}{0}{3}
+\beamer@sectionintoc {4}{Five Stages of Learning}{39}{0}{4}
+\beamer@sectionintoc {5}{Get Motivated}{49}{0}{5}
+\beamer@sectionintoc {6}{Extra Info}{51}{0}{6}
