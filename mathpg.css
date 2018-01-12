@@ -124,6 +124,26 @@ strong {
   text-style: bold;
 }
 
+/* small flexible tables: vegan macro */
+.tblflx {
+  text-align: center;
+  border: 5px outset grey;
+  width: 60%;
+}
+
+.tblflx td {
+  padding: 15px 20px 15px 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.tblflx th {
+  font-size: 110%;
+  text-align: center;
+  border: 1px solid black;
+  text-style: bold;
+}
+
 /* course header table */
 .tblhd {
   border: 5px outset grey;
@@ -447,8 +467,8 @@ button.game:active {
      height: 0;
      overflow: hidden;
  }
- .responsive-iframe-container iframe,   
- .vresponsive-iframe-container object,  
+ .responsive-iframe-container iframe,
+ .vresponsive-iframe-container object,
  .vresponsive-iframe-container embed {
      position: absolute;
      top: 0px;
