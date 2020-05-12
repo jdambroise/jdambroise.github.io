@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Grade Calculator &nbsp; &nbsp; &nbsp; d_(^-^)_b</title>
+  <link rel="stylesheet" href="styles/jennie.css" />
+</head>
+<body>
+  <form class="clearfix">
+    <div class="column">
+      <div class="grade-component" id="homeworks">
+        <h2>Homeworks</h2>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>How much are homeworks worth?</p>
+          </div>
+          <div class="subcolumn-2">
+            <div class="worth-weight">
+              <input class="grade-component-weight" type="text" />&#37;
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>Enter some homework scores.</p>
+          </div>
+          <div class="subcolumn-2">
+            <table>
+              <thead>
+                <th></th>
+                <th>Scored<br>Points</th>
+                <th>Total<br>Points</th>
+                <th>%</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>Homework average:</p>
+          </div>
+          <div class="subcolumn-2">
+            <span class="overall-percentage-correct"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="grade-component" id="quizzes">
+        <h2>Quizzes</h2>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p class="instruction">How much are quizzes worth?</p>
+          </div>
+          <div class="subcolumn-2">
+            <div class="worth-weight">
+              <input class="grade-component-weight" type="text" />&#37;
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>Enter some quiz scores.</p>
+          </div>
+          <div class="subcolumn-2">
+            <table>
+              <thead>
+                <th></th>
+                <th>Scored<br>Points</th>
+                <th>Total<br>Points</th>
+                <th>%</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>Quiz average:</p>
+          </div>
+          <div class="subcolumn-2">
+            <span class="overall-percentage-correct"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="grade-component" id="exams">
+        <h2>Exams</h2>
+        <div class="clearfix">
+          <div class="subcolumn-1">
+            <p>Enter some exam scores and their worth.</p>
+          </div>
+          <div class="subcolumn-2">
+            <table>
+              <thead>
+                <th></th>
+                <th>% score<br>out of 100</th>
+                <th>%<br>Weight</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="grade">
+        <h2>Final Percent</h2>
+        <div class="final-score-container">
+          <span class="final-score"></span>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div align="center">
+      This grade calculator is <b>just an approximation</b> of your grade, and is meant to help you answer <b>approximate</b> questions such as "What could I generally expect if I received such and such scores?".  Please understand that this grade calculator is currently in <b>TEST MODE</b> and does not imply <b>any</b> guarantees about your grade.  You should get the best estimate by filling in test values  for both exams and a few quizzes/homeworks.  Have fun calculating!
+      </div>
+    </div>
+  </form>
+
+  <script src="scripts/Class.js"></script>
+  <script src="scripts/jquery-1.7.1.min.js"></script>
+  <script src="scripts/jquery.query-2.1.7.js"></script>
+  <script src="scripts/grade.calculator/GradeCalculator.js"></script>
+  <script src="scripts/grade.calculator/GradeComponent.js"></script>
+  <script src="scripts/grade.calculator/GradeComponentPieces.js"></script>
+  <script src="scripts/grade.calculator/ExamSet.js"></script>
+  <script src="scripts/grade.calculator/Exam.js"></script>
+  <script src="scripts/grade.calculator/OverallHomeworks.js"></script>
+  <script src="scripts/grade.calculator/OverallQuizzes.js"></script>
+  <script src="scripts/grade.calculator/GradeComponentPiece.js"></script>
+  <script src="scripts/grade.calculator/Homework.js"></script>
+  <script src="scripts/grade.calculator/Quiz.js"></script>
+  <script src="scripts/jennie.js"></script>
+</body>
+</html>
+
+<!-- Localized -->
