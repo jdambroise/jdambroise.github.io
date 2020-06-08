@@ -25,17 +25,17 @@ text-align: center;
 }
 p {text-align: left;}
 
-.dotted_line_invert
+.dotted_line_brown
 {
-background-image:url('vegan/dotted_line_invert.png');
+background-image:url('vegan/dotted_line_brown.png');
 background-repeat:no-repeat;
 clear:both;
 width:916px;
 height:5px;
 }
-.dotted_line_exposure
+.dotted_line_aqua
 {
-background-image:url('vegan/dotted_line_exposure.png');
+background-image:url('vegan/dotted_line_aqua.png');
 background-repeat:no-repeat;
 clear:both;
 width:916px;
@@ -101,7 +101,7 @@ display:block;
 	padding: 0px;
 	list-style-type: none;
 	overflow:hidden;
-	width:650px;
+	width:700px;
 	float:left;
 }
 #header ul li , #header ul li a, #header ul li a:visited{
