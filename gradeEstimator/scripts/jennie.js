@@ -48,9 +48,9 @@ switch ($.query.get('course')) {
   case 'calc':
     course_defaults = {
       HOMEWORK_TOTALS:  [100],
-      HOMEWORKS_WEIGHT: 0.20,
+      HOMEWORKS_WEIGHT: 0.15,
       QUIZ_TOTALS:      [800],
-      QUIZZES_WEIGHT:   0.10,
+      QUIZZES_WEIGHT:   0.15,
       EXAM_WEIGHTS:     [0.20, 0.20, 0.30]
     };
     break;
